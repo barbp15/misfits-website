@@ -1,0 +1,140 @@
+/*     font-family: 'Damion', cursive;
+
+    font-family: 'Syne', sans-serif; */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  body, html { 
+      background-color: #111111; 
+      height: 100%;    
+  } 
+    .header-container { 
+      display: grid;   
+      grid-template-areas: repeat(3, 1fr);         
+      background-color: #f6b047;       
+   }
+   .header {
+      grid-column: 1/4;
+      grid-row:  1/2;
+      background-color: #111111;;
+      color: #333;    
+   }
+   .logo  {
+      display: flex;
+      justify-content:center;
+      margin-top: 20px;      
+      margin-bottom: 20px;    
+   }
+   
+   /* start nav */ 
+   .nav {
+      grid-column: 1/4;
+      grid-row: 1/2;   
+   } 
+  .nav, ul {
+      display: flex;
+      justify-content:center;    
+      list-style-type: none;
+      font-family:'Syne', sans-serif ; 
+      font-size: 18px;  
+      margin-bottom: 10px;      
+  }
+  li a {           
+      padding: 35px;        
+      padding-top: 35px;    
+      text-decoration: none; 
+      color: #f6b047;       
+    } 
+  li a:hover {
+      color:orangered;
+  }
+  hr {
+      color: #f6b047;
+  }
+    .mobile {
+       display: none; 
+    }
+  
+    /* end of nav */
+    /* end of header-container */
+     
+      /* start of main content */
+  /* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 50px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+figcaption {
+  color: #f6b047;
+  font-family: 'Syne', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+ h2 {
+  font-family: 'Damion', cursive;
+  font-size: 40px;
+  color: #f6b047;
+  padding: 30px;  
+ }   
+ p {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  line-height: 1.4rem;
+  color: #f6b047;
+  padding: 30px;
+ }  
+ .responsive {
+   width: 100%;
+   height: auto;
+ }    
+      
+
+    
+      /* start of footer */
+  footer {
+    background-color: #020202;
+  }
+  footer p {    
+    font-family: 'Syne',sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #f6b047;
+    text-align: center;
+    padding: 20px;
+  }
+/* end of footer */
+
+ /* mob burger menu */
+ @media screen and (max-width: 768px) {
+  .mobile {
+      /* display: inline-flex; */
+      display: block;
+      text-align: center; 
+      padding: 30px; 
+      font-size: 30px;
+      color: #f6b047;          
+  }
+ .nav {
+      display: none;
+  }  
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+  }
+}

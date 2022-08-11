@@ -1,0 +1,126 @@
+/*     font-family: 'Damion', cursive;
+
+    font-family: 'Syne', sans-serif; */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+    
+    body, html { 
+        background-color: #111111; 
+        height: 100%;  
+        margin: 0;  
+    } 
+      .header-container { 
+        display: grid;   
+        grid-template-areas: repeat(3, 1fr);         
+        background-color: #f6b047;       
+     }
+     .header {
+        grid-column: 1/4;
+        grid-row:  1/2;
+        background-color: #111111;;
+        color: #333;    
+     }
+     .logo  {
+        display: flex;
+        justify-content:center;
+        margin-top: 20px;      
+        margin-bottom: 20px;    
+     }     
+     
+     /* start nav */ 
+
+     .nav {
+        grid-column: 1/4;
+        grid-row: 1/2;   
+     } 
+    .nav, ul {
+        display: flex;
+        justify-content:center;    
+        list-style-type: none;
+        font-family:'Syne', sans-serif ; 
+        font-size: 18px;  
+        margin-bottom: 10px;      
+    }
+    li a {           
+        padding: 35px;        
+        padding-top: 35px;    
+        text-decoration: none; 
+        color: #f6b047;       
+      } 
+    li a:hover {
+        color:orangered;
+    }
+    hr {
+        color: #f6b047;
+    }
+    /* for mobile view */
+    .mobile {
+         display: none; 
+    }    
+
+      /* end of nav */
+      /* end of header-container */
+
+      /* start of main content */  
+      
+      .bgimg {
+         background-image: url("https://i.ibb.co/w0gvw2Z/drag-strip.jpg");
+         height: 100%;
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;        
+         position: relative;
+         color: #000;
+         font-family: "Courier New", Courier, monospace;
+         font-size: 25px;
+      }
+      .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: 'Damion', cursive;        
+      }
+      .middle, h1 {
+          font-size: 70px;          
+          text-shadow: 2px 3px 5px#f6b047;          
+      }
+      .middle, p {
+          font-size: 55px;
+      }
+      /* end of main content */
+            
+      /* start of footer */
+   footer {
+    background-color: #020202;
+    width: 100%;
+    bottom: 0;
+    }
+   footer p {
+    font-family: 'Syne',sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #f6b047;
+    text-align: center;
+    padding: 20px;
+  }
+ /* end of footer */
+
+ /* mob burger menu */
+ @media screen and (max-width: 768px) {
+  .mobile {
+      /* display: inline-flex; */
+      display: block;
+      text-align: center; 
+      padding: 30px; 
+      font-size: 30px;
+      color: #f6b047;          
+  }
+ .nav {
+      display: none;
+  }  
+}

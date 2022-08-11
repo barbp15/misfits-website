@@ -1,0 +1,168 @@
+/*     font-family: 'Damion', cursive;
+
+    font-family: 'Syne', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, html { 
+    background-color: #111111; 
+    height: 100%;    
+} 
+  .header-container { 
+    display: grid;   
+    grid-template-areas: repeat(3, 1fr);         
+    background-color: #f6b047;       
+ }
+ .header {
+    grid-column: 1/4;
+    grid-row:  1/2;
+    background-color: #111111;;
+    color: #333;    
+ }
+ .logo  {
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;      
+    margin-bottom: 20px;    
+ }
+ 
+ /* start nav */ 
+ .nav {
+    grid-column: 1/4;
+    grid-row: 1/2;   
+ } 
+.nav, ul {
+    display: flex;
+    justify-content:center;    
+    list-style-type: none;
+    font-family:'Syne', sans-serif ; 
+    font-size: 18px;  
+    margin-bottom: 10px;      
+}
+li a {           
+    padding: 35px;        
+    padding-top: 35px;    
+    text-decoration: none; 
+    color: #f6b047;       
+  } 
+li a:hover {
+    color:orangered;
+}
+hr {
+    color: #f6b047;
+}
+  .mobile {
+     display: none; 
+  }
+
+  /* end of nav */
+  /* end of header-container */
+
+  /* start of main content */
+  .greeting {    
+    color:#f6b047;
+    text-align: center;
+    font-family: 'Damion', cursive;
+    font-size: 85px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    height:220px;
+    background:rgba(51, 51, 51, 0.3);
+    border: 1px solid #f6b047;
+    
+    
+} 
+.greeting h1  {
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    
+}
+/* starts the parallax scroll on desktop only */
+.parallax1 {
+    background-image: url("https://i.ibb.co/3vmQzjC/traxxas-car-side-medium.png");
+    width: 100%;
+    min-height: 388px;  
+    
+    /* parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    background-image: url("https://i.ibb.co/rpsGffL/rctruck-side-2.png");
+    min-height: 416px;
+            
+    /* parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+/* end of parallax scroll */
+
+/* start of footer */
+  footer {
+      background-color: #020202;
+  }
+  footer p {
+      font-family: 'Syne',sans-serif;
+      font-size: 16px;
+      line-height: 1.5em;
+      color: #f6b047;
+      text-align: center;
+      padding: 20px;
+  }
+  /* end of footer */
+
+   /* mob burger menu */
+   @media screen and (max-width: 768px) {
+    .mobile {        
+        display: block;
+        text-align: center; 
+        padding: 30px; 
+        font-size: 30px;
+        color: #f6b047;          
+    }
+   .nav {
+        display: none;
+    }  
+  }
+  /* end of mobile nav */
+
+
+  @media screen and (max-width:768px) {
+      .photos {
+          display: block;
+          width: 100vw;                    
+      }
+  }
+  @media screen and (min-width: 768px) {
+      .photo {
+          display: none;
+      }
+  }
+    @media screen and (max-width: 768px) {
+        .greeting {
+            width: 100%; 
+            font-size: 52px;           
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .greeting h1 {
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .parallax1, .parallax2 {
+          display: none;
+        }
+     }

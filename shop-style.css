@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    background-color: #111111;
+    font-family: 'Syne', sans-serif;
+}
+.header-container { 
+    display: grid;   
+    grid-template-areas: repeat(3, 1fr);         
+    background-color: #f6b047;       
+ }
+ .header {
+    grid-column: 1/4;
+    grid-row:  1/2;
+    background-color: #111111;;
+    color: #333;    
+ }
+ .logo  {
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;      
+    margin-bottom: 20px;    
+ }
+ 
+ /* start nav */ 
+ .nav {
+    grid-column: 1/4;
+    grid-row: 1/2;   
+ } 
+.nav, ul {
+    display: flex;
+    justify-content:center;    
+    list-style-type: none;
+    font-family:'Syne', sans-serif ; 
+    font-size: 18px;  
+    margin-bottom: 10px;      
+}
+li a {           
+    padding: 35px;        
+    padding-top: 35px;    
+    text-decoration: none; 
+    color: #f6b047;       
+  } 
+li a:hover {
+    color:orangered;
+}
+hr {
+    color: #f6b047;
+}
+  .mobile {
+     display: none; 
+  }
+
+  /* end of nav */
+  /* end of header-container */
+
+  /* start main content */
+  h1 {
+      font-size: 45px;
+      color: #f6b047;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  h2 {
+      color: #f6b047;
+      font-weight: 400;
+      font-size: 23px;
+      text-align: center;
+      padding-top: 15px;
+  }
+  p {
+      font-size: 18px;
+      color: #f6b047;
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 25px;
+  }
+
+
+
+ /* Float three columns side by side */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 3px 3px; 
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  /* .row {margin: 0 -5px;} */
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column img {
+      width: 100%;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  } 
+
+
+
+
+
+
+
+  /* start of footer */
+  footer {
+    background-color: #020202;
+}
+footer p {
+    font-family: 'Syne',sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #f6b047;
+    text-align: center;
+    padding: 20px;
+}
+/* end of footer */
+
+ /* mob burger menu */
+ @media screen and (max-width: 768px) {
+  .mobile {        
+      display: block;
+      text-align: center; 
+      padding: 30px; 
+      font-size: 30px;
+      color: #f6b047;          
+  }
+ .nav {
+      display: none;
+  }  
+}
+/* end of mobile nav */
